@@ -128,8 +128,26 @@ export const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Bar */}
+        {/* Trust Indicators */}
         <div className="mt-12 pt-8 border-t border-primary-foreground/10">
+          <div className="flex flex-wrap justify-center gap-8 mb-8">
+            <div className="flex items-center gap-3">
+              <div className="text-3xl font-bold text-accent">100+</div>
+              <div className="text-sm text-primary-foreground/70">Peternak<br />Mitra</div>
+            </div>
+            <div className="flex items-center gap-3">
+              <div className="text-3xl font-bold text-accent">Jawa-Bali</div>
+              <div className="text-sm text-primary-foreground/70">Wilayah<br />Layanan</div>
+            </div>
+            <div className="flex items-center gap-3">
+              <div className="text-3xl font-bold text-accent">Gratis</div>
+              <div className="text-sm text-primary-foreground/70">Konsultasi<br />Qurban</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="pt-8 border-t border-primary-foreground/10">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-sm text-primary-foreground/50">
               © {new Date().getFullYear()} Kawan Qurban. Dikembangkan oleh Tim noransgp.com
