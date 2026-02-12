@@ -38,7 +38,7 @@ export const HeroSection = () => {
           {/* Subheadline */}
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mb-8 leading-relaxed animate-slide-up" style={{ animationDelay: "0.1s" }}>
             Edukasi lengkap tentang hewan qurban, konsultasi gratis, dan layanan kemitraan
-            untuk Shohibul Qurban, panitia masjid, dan komunitas di seluruh Jawa-Bali.
+            untuk Shohibul Qurban, panitia masjid, dan peternak di seluruh Jawa-Bali.
           </p>
 
           {/* CTA Buttons */}
@@ -58,23 +58,6 @@ export const HeroSection = () => {
             </Button>
           </div>
 
-          {/* Trust Indicators */}
-          <div className="mt-12 pt-8 border-t border-border/50 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-            <div className="flex flex-wrap gap-8">
-              <div className="flex items-center gap-3">
-                <div className="text-3xl font-bold text-primary">100+</div>
-                <div className="text-sm text-muted-foreground">Peternak<br />Mitra</div>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="text-3xl font-bold text-primary">Jawa-Bali</div>
-                <div className="text-sm text-muted-foreground">Wilayah<br />Layanan</div>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="text-3xl font-bold text-primary">Gratis</div>
-                <div className="text-sm text-muted-foreground">Konsultasi<br />Qurban</div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
