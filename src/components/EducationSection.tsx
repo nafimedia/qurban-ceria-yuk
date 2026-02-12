@@ -10,11 +10,13 @@ import {
   HeartHandshake,
   ArrowRight
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const educationTopics = [
   {
     icon: Scale,
     title: "Dasar Hukum Qurban",
+    slug: "dasar-hukum-qurban",
     description: "Pengertian, hukum, waktu pelaksanaan, syarat hewan, dan FAQ untuk pemula.",
     topics: ["Pengertian & tujuan qurban", "Hukum dan waktu pelaksanaan", "Syarat hewan & larangan cacat", "Patungan qurban"],
     color: "from-primary to-forest-light",
@@ -22,6 +24,7 @@ const educationTopics = [
   {
     icon: Search,
     title: "Pilih Hewan",
+    slug: "pilih-hewan",
     description: "Panduan lengkap memilih hewan qurban yang sehat dan layak.",
     topics: ["Jenis hewan qurban", "Ciri hewan sehat", "Kondisi tidak layak", "Checklist sebelum DP"],
     color: "from-accent to-gold-light",
@@ -29,6 +32,7 @@ const educationTopics = [
   {
     icon: Wallet,
     title: "Harga & Budgeting",
+    slug: "harga-budgeting",
     description: "Tips menentukan budget dan menghindari penipuan harga.",
     topics: ["Faktor penentu harga", "Strategi budgeting", "Perbandingan opsi", "Tips anti tipu-tipu"],
     color: "from-earth to-earth-light",
@@ -36,6 +40,7 @@ const educationTopics = [
   {
     icon: ClipboardCheck,
     title: "Persiapan Teknis",
+    slug: "persiapan-teknis",
     description: "Checklist lengkap dari H-30 sampai Hari H.",
     topics: ["Timeline persiapan", "Persiapan panitia", "Kandang sementara", "Manajemen logistik"],
     color: "from-sage-dark to-sage",
@@ -43,6 +48,7 @@ const educationTopics = [
   {
     icon: Scissors,
     title: "Teknis Penyembelihan",
+    slug: "teknis-penyembelihan",
     description: "Panduan prinsip dan prosedur penyembelihan yang benar.",
     topics: ["Prinsip dasar", "Persiapan alat", "Prosedur step-by-step", "Kesalahan umum"],
     color: "from-primary to-forest-light",
@@ -50,6 +56,7 @@ const educationTopics = [
   {
     icon: PackageCheck,
     title: "Pasca Penyembelihan",
+    slug: "pasca-penyembelihan",
     description: "Penanganan daging, distribusi, dan kebersihan lokasi.",
     topics: ["Penanganan karkas", "Pengemasan", "Distribusi daging", "Pengelolaan limbah"],
     color: "from-accent to-gold-light",
@@ -57,6 +64,7 @@ const educationTopics = [
   {
     icon: HeartHandshake,
     title: "Kesejahteraan Hewan",
+    slug: "kesejahteraan-hewan",
     description: "Prinsip berihsan dan perlakuan baik pada hewan.",
     topics: ["Prinsip berihsan", "Handling hewan", "Mengurangi stres", "Do & Don'ts"],
     color: "from-earth to-earth-light",
@@ -107,9 +115,11 @@ export const EducationSection = () => {
                     </li>
                   ))}
                 </ul>
-                <Button variant="ghost" size="sm" className="w-full group-hover:bg-muted transition-colors">
-                  Pelajari
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                <Button variant="ghost" size="sm" className="w-full group-hover:bg-muted transition-colors" asChild>
+                  <Link to={`/edukasi/${topic.slug}`}>
+                    Pelajari
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
