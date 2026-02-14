@@ -77,17 +77,10 @@ export const EducationSection = () => {
       <div className="section-container">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4">
-            Pusat Edukasi
-          </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Materi <span className="gradient-text">Edukasi Qurban</span>
+            Seputar <span className="gradient-text">Qurban</span>
           </h2>
           <div className="section-divider mb-6" />
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            Pelajari seluruh aspek qurban dari A sampai Z. Konten disusun dengan rujukan
-            tepercaya dan berbasis ilmiah oleh tim dosen dan praktisi peternakan.
-          </p>
         </div>
 
         {/* Education Topics Grid */}
