@@ -86,36 +86,42 @@ export const EducationSection = () => {
         {/* Education Topics Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {educationTopics.map((topic, index) => (
-            <Card
+            <Link
               key={topic.title}
-              variant="elevated"
-              className="group cursor-pointer"
+              to={`/edukasi/${topic.slug}`}
+              className="group block"
             >
-              <CardHeader className="pb-3">
-                <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${topic.color} flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300`}>
-                  <topic.icon className="w-6 h-6 text-white" />
-                </div>
-                <CardTitle className="text-lg">{topic.title}</CardTitle>
-                <CardDescription className="text-sm">{topic.description}</CardDescription>
-              </CardHeader>
-              
-              <CardContent className="pt-0">
-                <ul className="space-y-2 mb-4">
-                  {topic.topics.map((item) => (
-                    <li key={item} className="text-xs text-muted-foreground flex items-center gap-2">
-                      <div className="w-1 h-1 rounded-full bg-accent" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-                <Button variant="ghost" size="sm" className="w-full group-hover:bg-muted transition-colors" asChild>
-                  <Link to={`/edukasi/${topic.slug}`}>
+              <Card
+                variant="elevated"
+                className="h-full cursor-pointer overflow-hidden relative border-transparent hover:border-accent/30"
+              >
+                {/* Decorative gradient top bar */}
+                <div className={`h-1.5 w-full bg-gradient-to-r ${topic.color}`} />
+
+                <CardHeader className="pb-3 pt-5">
+                  <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${topic.color} flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg`}>
+                    <topic.icon className="w-7 h-7 text-white" strokeWidth={1.8} />
+                  </div>
+                  <CardTitle className="text-lg group-hover:text-primary transition-colors duration-300">{topic.title}</CardTitle>
+                  <CardDescription className="text-sm leading-relaxed">{topic.description}</CardDescription>
+                </CardHeader>
+                
+                <CardContent className="pt-0">
+                  <ul className="space-y-2.5 mb-5">
+                    {topic.topics.map((item) => (
+                      <li key={item} className="text-xs text-muted-foreground flex items-center gap-2.5">
+                        <div className={`w-1.5 h-1.5 rounded-full bg-gradient-to-br ${topic.color} shrink-0`} />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="flex items-center gap-2 text-sm font-semibold text-primary group-hover:text-accent transition-colors duration-300">
                     Pelajari
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform duration-300" />
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
           ))}
         </div>
 
