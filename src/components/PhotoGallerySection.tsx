@@ -6,12 +6,12 @@ import galleryDomba1 from "@/assets/gallery-domba-1.jpg";
 import galleryKegiatan1 from "@/assets/gallery-kegiatan-1.jpg";
 
 const photos = [
-  { src: gallerySapi1, alt: "Sapi qurban sehat di padang rumput", label: "Sapi Brahman" },
-  { src: galleryKambing1, alt: "Kambing putih sehat di peternakan", label: "Kambing Etawa" },
-  { src: galleryPasar1, alt: "Pemilihan hewan qurban di pasar", label: "Seleksi Hewan" },
-  { src: gallerySapi2, alt: "Kelompok sapi di peternakan modern", label: "Peternakan Mitra" },
-  { src: galleryDomba1, alt: "Domba ekor gemuk sehat", label: "Domba Qurban" },
-  { src: galleryKegiatan1, alt: "Kegiatan qurban bersama komunitas", label: "Kegiatan Qurban" },
+  { src: gallerySapi1, alt: "Sapi-sapi qurban di kandang peternakan mitra", label: "Kandang Sapi" },
+  { src: galleryKambing1, alt: "Sapi sedang makan rumput di peternakan", label: "Sapi Makan" },
+  { src: galleryPasar1, alt: "Sapi-sapi di dalam kandang peternakan", label: "Peternakan Mitra" },
+  { src: gallerySapi2, alt: "Sapi-sapi beristirahat di kandang", label: "Sapi Istirahat" },
+  { src: galleryDomba1, alt: "Peternak mengecek kondisi sapi", label: "Perawatan Hewan" },
+  { src: galleryKegiatan1, alt: "Kunjungan ke peternakan mitra", label: "Kunjungan Peternakan" },
 ];
 
 export const PhotoGallerySection = () => {
