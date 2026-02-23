@@ -73,6 +73,40 @@ const DasarHukumQurban = () => (
         </AccordionItem>
       </Accordion>
     </div>
+
+    <div className="mt-12">
+      <h2 className="text-2xl font-bold mb-6">Sumber & Literatur</h2>
+      <Card variant="elevated">
+        <CardContent className="pt-6">
+          <ul className="space-y-4 text-muted-foreground">
+            <li className="flex gap-3">
+              <span className="text-primary font-bold shrink-0">1.</span>
+              <span><strong>Al-Qur'an Surat Al-Hajj (22): 34–37</strong> — Ayat tentang perintah berkurban dan ketakwaan sebagai tujuan utama ibadah qurban.</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-primary font-bold shrink-0">2.</span>
+              <span><strong>Al-Qur'an Surat Al-Kautsar (108): 1–3</strong> — Perintah shalat dan menyembelih (nahr) sebagai bentuk syukur kepada Allah SWT.</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-primary font-bold shrink-0">3.</span>
+              <span><strong>Hadits Riwayat Muslim (No. 1963)</strong> — Dari Jabir bin Abdillah tentang tata cara qurban Rasulullah ﷺ pada hari Idul Adha.</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-primary font-bold shrink-0">4.</span>
+              <span><strong>Fiqh Sunnah — Sayyid Sabiq</strong> — Bab tentang hukum, syarat, dan ketentuan hewan qurban secara komprehensif.</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-primary font-bold shrink-0">5.</span>
+              <span><strong>Al-Fiqh Al-Islami wa Adillatuhu — Wahbah Az-Zuhaili</strong> — Pembahasan lengkap tentang khilafiyah hukum qurban menurut empat madzhab.</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-primary font-bold shrink-0">6.</span>
+              <span><strong>Fatwa MUI No. 12 Tahun 2009</strong> — Tentang standar penyembelihan halal dan ketentuan hewan qurban di Indonesia.</span>
+            </li>
+          </ul>
+        </CardContent>
+      </Card>
+    </div>
   </EducationPageLayout>
 );
 
